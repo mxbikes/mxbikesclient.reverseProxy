@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag rikvanhaaren/service-comment:latest
+      run: docker build . --file Dockerfile --tag rikvanhaaren/reverseProxy:latest
     - name: Push the Docker image
-      run: docker login -u rikvanhaaren -p ${{ secrets.DOCKERHUB_TOKEN }} && docker push rikvanhaaren/service-comment:latest
+      run: docker login -u rikvanhaaren -p ${{ secrets.DOCKERHUB_TOKEN }} && docker push rikvanhaaren/reverseProxy:latest
