@@ -9,8 +9,8 @@ RUN go mod download
 COPY *.go ./
 COPY . ./
 
-RUN go build -o ./reverseProxy
+RUN go build -o ./reverse_proxy
 
 EXPOSE 4105
 
-CMD [ "./reverseProxy" ]
+CMD [ "./reverse_proxy" ]
