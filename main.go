@@ -14,11 +14,13 @@ import (
 	"google.golang.org/grpc"
 
 	protobuffer_comment "github.com/mxbikes/protobuf/comment"
+	protobuffer_user "github.com/mxbikes/protobuf/user"
 )
 
 var (
 	port              = getEnv("PORT", ":4105")
 	URLServiceComment = getEnv("SERVICE_COMMENT_URL", "localhost:4089")
+	URLServiceUser    = getEnv("SERVICE_USER_URL", "localhost:4090")
 )
 
 func main() {
@@ -42,6 +44,12 @@ func main() {
 	err = protobuffer_comment.RegisterCommentServiceHandlerFromEndpoint(context.Background(), gwmux, URLServiceComment, []grpc.DialOption{grpc.WithInsecure()})
 	if err != nil {
 		logger.WithFields(logrus.Fields{"prefix": "SERVICE.COMMENT"}).Fatal("unable to open a connection to service")
+	}
+
+	// Register ServiceUser
+	err = protobuffer_user.RegisterUserServiceHandlerFromEndpoint(context.Background(), gwmux, URLServiceUser, []grpc.DialOption{grpc.WithInsecure()})
+	if err != nil {
+		logger.WithFields(logrus.Fields{"prefix": "SERVICE.USER"}).Fatal("unable to open a connection to service")
 	}
 
 	gwServer := &http.Server{

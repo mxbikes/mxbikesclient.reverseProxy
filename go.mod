@@ -2,7 +2,7 @@ module github.com/mxbikes/mxbikesclient.reverseProxy
 
 go 1.19
 
-require github.com/mxbikes/protobuf v0.0.0-20230102172553-61cae9d10bc6
+require github.com/mxbikes/protobuf v0.0.0-20230102204926-bd3892e8291e
 
 require (
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
