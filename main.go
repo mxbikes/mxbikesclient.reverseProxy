@@ -15,14 +15,16 @@ import (
 
 	protobuffer_comment "github.com/mxbikes/protobuf/comment"
 	protobuffer_mod "github.com/mxbikes/protobuf/mod"
+	protobuffer_modImage "github.com/mxbikes/protobuf/modImage"
 	protobuffer_user "github.com/mxbikes/protobuf/user"
 )
 
 var (
-	port              = getEnv("PORT", ":4105")
-	URLServiceComment = getEnv("SERVICE_COMMENT_URL", "localhost:4089")
-	URLServiceUser    = getEnv("SERVICE_USER_URL", "localhost:4090")
-	URLServiceMod     = getEnv("SERVICE_MOD_URL", "localhost:4091")
+	port               = getEnv("PORT", ":4105")
+	URLServiceComment  = getEnv("SERVICE_COMMENT_URL", "localhost:4089")
+	URLServiceUser     = getEnv("SERVICE_USER_URL", "localhost:4090")
+	URLServiceMod      = getEnv("SERVICE_MOD_URL", "localhost:4091")
+	URLServiceModImage = getEnv("SERVICE_MODIMAGE_URL", "localhost:4092")
 )
 
 func main() {
@@ -56,6 +58,12 @@ func main() {
 
 	// Register ServiceMod
 	err = protobuffer_mod.RegisterModServiceHandlerFromEndpoint(context.Background(), gwmux, URLServiceMod, []grpc.DialOption{grpc.WithInsecure()})
+	if err != nil {
+		logger.WithFields(logrus.Fields{"prefix": "SERVICE.MOD"}).Fatal("unable to open a connection to service")
+	}
+
+	// Register ServiceModImage
+	err = protobuffer_modImage.RegisterModImageServiceHandlerFromEndpoint(context.Background(), gwmux, URLServiceModImage, []grpc.DialOption{grpc.WithInsecure()})
 	if err != nil {
 		logger.WithFields(logrus.Fields{"prefix": "SERVICE.MOD"}).Fatal("unable to open a connection to service")
 	}
