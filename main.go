@@ -65,7 +65,7 @@ func main() {
 	// Register ServiceModImage
 	err = protobuffer_modImage.RegisterModImageServiceHandlerFromEndpoint(context.Background(), gwmux, URLServiceModImage, []grpc.DialOption{grpc.WithInsecure()})
 	if err != nil {
-		logger.WithFields(logrus.Fields{"prefix": "SERVICE.MOD"}).Fatal("unable to open a connection to service")
+		logger.WithFields(logrus.Fields{"prefix": "SERVICE.MODIMAGE"}).Fatal("unable to open a connection to service")
 	}
 
 	gwServer := &http.Server{

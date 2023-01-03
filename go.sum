@@ -238,6 +238,8 @@ github.com/mxbikes/protobuf v0.0.0-20230102172553-61cae9d10bc6 h1:aMI9Nid/wotEx1
 github.com/mxbikes/protobuf v0.0.0-20230102172553-61cae9d10bc6/go.mod h1:gTVe4EZtR1mt/6qloBePsOfO4r/58EgzroriaPy/KBo=
 github.com/mxbikes/protobuf v0.0.0-20230102204926-bd3892e8291e h1:DM9r3T9uHNClB0uMVbH/cJ+9kE4bdvfIqZ0mrarB/AE=
 github.com/mxbikes/protobuf v0.0.0-20230102204926-bd3892e8291e/go.mod h1:gTVe4EZtR1mt/6qloBePsOfO4r/58EgzroriaPy/KBo=
+github.com/mxbikes/protobuf v0.0.0-20230103211833-ac5206625887 h1:hrLYAkjD0lD2tLng/ZBpqWbxphqPR6/VFvp22owjk1U=
+github.com/mxbikes/protobuf v0.0.0-20230103211833-ac5206625887/go.mod h1:gTVe4EZtR1mt/6qloBePsOfO4r/58EgzroriaPy/KBo=
 github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e/go.mod h1:zD1mROLANZcx1PVRCS0qkT7pwLkGfwJo4zjcN/Tysno=
 github.com/oklog/ulid v1.3.1 h1:EGfNDEx6MqHz8B3uNV6QAib1UR2Lm97sHi3ocA6ESJ4=
 github.com/oklog/ulid v1.3.1/go.mod h1:CirwcVhetQ6Lv90oh/F+FBtV6XMibvdAFo93nm5qn4U=
