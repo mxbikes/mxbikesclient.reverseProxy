@@ -2,8 +2,6 @@ module github.com/mxbikes/mxbikesclient.reverseProxy
 
 go 1.19
 
-require github.com/mxbikes/protobuf v0.0.0-20230107211040-de5c39398c18
-
 require (
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
@@ -28,6 +26,7 @@ require (
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
+	github.com/mxbikes/protobuf v0.0.0-20230107211040-de5c39398c18 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.6 // indirect
