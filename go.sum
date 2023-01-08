@@ -234,6 +234,8 @@ github.com/mitchellh/mapstructure v1.5.0/go.mod h1:bFUtVrKA4DC2yAKiSyO/QUcy7e+RR
 github.com/montanaflynn/stats v0.0.0-20171201202039-1bf9dbcd8cbe/go.mod h1:wL8QJuTMNUDYhXwkmfOly8iTdp5TEcJFWZD2D7SIkUc=
 github.com/mxbikes/protobuf v0.0.0-20230107211040-de5c39398c18 h1:/3iiFmYRsjgYmKrOWVpcVBMnSL2PQt9qulO83zcmLIw=
 github.com/mxbikes/protobuf v0.0.0-20230107211040-de5c39398c18/go.mod h1:gTVe4EZtR1mt/6qloBePsOfO4r/58EgzroriaPy/KBo=
+github.com/mxbikes/protobuf v0.0.0-20230108102456-a18e2c83e8a4 h1:XDu63S074E+ak2M1arKqR/LZnFoUGx/uffHNQJ+z1a0=
+github.com/mxbikes/protobuf v0.0.0-20230108102456-a18e2c83e8a4/go.mod h1:KeHTJSm49q8tIXuWnfQsX+GGJl7kIvzQ4D4MYzBmJTY=
 github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e/go.mod h1:zD1mROLANZcx1PVRCS0qkT7pwLkGfwJo4zjcN/Tysno=
 github.com/oklog/ulid v1.3.1 h1:EGfNDEx6MqHz8B3uNV6QAib1UR2Lm97sHi3ocA6ESJ4=
 github.com/oklog/ulid v1.3.1/go.mod h1:CirwcVhetQ6Lv90oh/F+FBtV6XMibvdAFo93nm5qn4U=
